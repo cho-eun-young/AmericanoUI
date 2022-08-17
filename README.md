@@ -5,7 +5,7 @@
 
 ## Resources
 
-- [Figma](https://www.figma.com/file/krLdBwrhY8JJXvw4bh68eJ/Americano-UI-v.screener.0.1?node-id=104%3A8)
+- [Figma url](https://www.figma.com/file/krLdBwrhY8JJXvw4bh68eJ/Americano-UI-v.screener.0.1?node-id=104%3A8)
 
 ## Introduction
 
