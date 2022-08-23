@@ -1,0 +1,5 @@
+aside{
+    min-width: calc(20% - 0.4rem);
+    height: 100%;
+    border-left: 0.4rem solid #EA1E26;
+  }

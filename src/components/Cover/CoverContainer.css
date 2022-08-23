@@ -1,0 +1,24 @@
+.CoverContainer{
+  z-index: 99;
+  transform: translateX(0);
+  transition: 1s ease-in-out;
+}
+
+.hover{
+  transform: translateX(-15rem);
+  transition: 1s ease-in-out;
+}
+
+.CoverContainer, #OpacityCover{
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.CoverContainer h2{
+  font-size: 4rem;
+  text-align: center;
+  color: #EA1E26;
+  margin-top: 20rem;
+}
