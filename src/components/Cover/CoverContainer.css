@@ -1,11 +1,6 @@
 .CoverContainer{
-  z-index: 99;
+  z-index: 10;
   transform: translateX(0);
-  transition: 1s ease-in-out;
-}
-
-.hover{
-  transform: translateX(-15rem);
   transition: 1s ease-in-out;
 }
 
@@ -21,9 +16,35 @@
   text-align: center;
   color: #EA1E26;
   margin-top: 20rem;
-  cursor: pointer;
 }
 
-.hidden{
-  display: none;
+.transparentBg{
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 99;
+  margin-left: calc(100vw - 200px);
+  background: transparent;
+  width: 200px;
+  height: 100vh;
 }
+
+.hover{
+  transform: translateX(-200px);
+  transition: 1s ease-in-out ;
+}
+
+.leave{
+  transform: translateX(0);
+  transition: 1s ease-in-out;
+}
+
+.material-symbols-outlined{
+  position: absolute;
+  right: 1rem;
+  top: 22rem;
+  border: none;
+  background-color: transparent;
+  margin-right: 2rem;
+}
+

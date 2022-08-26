@@ -1,5 +1,33 @@
 nav{
+    position: absolute;
     background-color: #EA1E26;
-    ;
-    height: 2.8rem;
+    height: 3.5rem;
+    width: 100vw;
+    left: 0;
+    top: 0;
+
+}
+
+#search{
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    min-width: 50rem;
+    height: 2rem;
+    margin-left: 50%;
+    left: -25rem;
+    margin-top: 0.7rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 1rem;
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png) 13px center no-repeat;
+    background-size: contain;
+    text-indent: 30px;
+}
+
+
+#search:focus {
+    background-image: none;
+    background-position: -10px center;
+    text-indent: 0;
+    width: 50%;
 }

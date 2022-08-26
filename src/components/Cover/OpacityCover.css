@@ -1,3 +1,8 @@
 #OpacityCover{
     background: rgba(234, 30, 38, 0.9);
+    left: 0;
+    top: 0;
+    z-index: 9;
+    cursor: pointer;
 }
+

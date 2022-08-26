@@ -1,26 +1,27 @@
 import './CoverContainer.css'
-import { useCallback, useRef } from 'react';
-
+import { useRef } from 'react';
 export const CoverContainer = () => {
-  const cover = useRef();
+  const handlerCover = useRef();
 
-  const handlerMouseOver = useCallback(() => {
-    cover.current.classList.add('hover');
-  },[]);
+  const handlerMouseOver = (e) => {
+    e.preventDefault()
+    handlerCover.current.classList.add('hover');
+  }
+  const handlerMouseLeave = (e) => {
+    e.preventDefault()
+    handlerCover.current.classList.remove('hover');
+  }
 
-  const handlerMouseLeave = useCallback(() => {
-    cover.current.classList.remove('hover');
-  },[]);
-
-  const handlerClick = useCallback(() => {
-    window.document.getElementById('Cover').classList.add('hidden');
-  },[]);
-  
-  return <div ref={cover} className='CoverContainer' >
-    <h2 id='AmericanoScreener' onMouseOver={handlerMouseOver} onMouseLeave={handlerMouseLeave}
-    onClick={handlerClick}
-    >
-      Americano Screener
-    </h2>
-  </div>
+  return (
+    <div className = 'CoverContainer' ref={handlerCover} >
+      <h2 id='AmericanoScreener'>
+        Americano Screener
+      </h2>
+      <button className="material-symbols-outlined">arrow_forward_ios</button>
+      <div className ='transparentBg'
+        onMouseEnter = {handlerMouseOver}
+        onMouseLeave = {handlerMouseLeave}
+      ></div>
+    </div>
+  )
 }

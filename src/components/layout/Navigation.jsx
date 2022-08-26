@@ -2,6 +2,8 @@ import './Navigation.css';
 
 export const Navigation = () => {
   return <nav>
-    <h2>Navigation</h2>
+    <form>
+      <input type={'search'} id='search' name='search' placeholder='종목을 입력하세요.'></input>
+    </form>
   </nav>
 }

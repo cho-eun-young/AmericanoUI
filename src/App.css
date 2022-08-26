@@ -1,12 +1,21 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
 .App{
   position: relative;
-  overflow: hidden;
 }
 
 /* main */
 main{
+  position: absolute;
+  left: 0;
+  top: 3.5rem;
+  width: 100vw;
+  z-index: 4;
   display: flex;
-  height: calc(100vh - 2.8rem);
+  height: calc(100vh - 3.5rem);
 }
 
 

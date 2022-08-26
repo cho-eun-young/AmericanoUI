@@ -1,8 +1,14 @@
 import './CoverContainer.css';
 import './OpacityCover.css';
+import { useRef } from 'react';
 
-export const OpacityCover = () => {
-  return <div id="OpacityCover">
-    <h2>Opacity</h2> 
-  </div>
+export const OpacityCover = (props) => {
+  const handlerOpacity = useRef();
+  return (
+    <div
+      id="OpacityCover"
+      onClick={props.onMouseClick}
+      ref={handlerOpacity}
+    ></div>
+  );
 }
